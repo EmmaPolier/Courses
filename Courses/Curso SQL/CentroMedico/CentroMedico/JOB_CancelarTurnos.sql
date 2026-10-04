@@ -1,0 +1,3 @@
+UPDATE Turno SET idTueTur = 3
+	WHERE CONVERT(char(8), fechaTur, 112) < CONVERT(char(8), GETDATE(), 112)
+	AND idTueTur = 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

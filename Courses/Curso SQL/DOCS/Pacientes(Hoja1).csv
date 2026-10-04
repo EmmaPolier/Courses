@@ -1,0 +1,39 @@
+nombre,apellido,apellido 2,telefono,dirección,país,email,fecha nac,puesto,planta,,
+Arnol ,Espitaleta Sierra,,324324343,Calle 12,MEX,prueba@gmail.com,22/10/1979,técnico,si,"INSERT INTO Paciente VALUES('Arnol ','Espitaleta Sierra','','19791022','Calle 12','MEX',324324343,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Jonathan,Matamoros,,435345345,Calle 13,COL,prueba@gmail.com,23/10/1979,adminitrativo,si,"INSERT INTO Paciente VALUES('Jonathan','Matamoros','','19791023','Calle 13','COL',435345345,'prueba@gmail.com','adminitrativo')",INSERT INTO Pais VALUES('COL')
+Alexander,Campos,,435345345,Calle 14,CRI,prueba@gmail.com,24/10/1979,adminitrativo,si,"INSERT INTO Paciente VALUES('Alexander','Campos','','19791024','Calle 14','CRI',435345345,'prueba@gmail.com','adminitrativo')",INSERT INTO Pais VALUES('CRI')
+Francisco,Rios,,,Calle 15,MEX,prueba@gmail.com,25/10/1979,adminitrativo,si,"INSERT INTO Paciente VALUES('Francisco','Rios','','19791025','Calle 15','MEX',NULL,'prueba@gmail.com','adminitrativo')",INSERT INTO Pais VALUES('MEX')
+Angel Hernan,Salazar Casella,,,Calle 16,ECU,prueba@gmail.com,25/10/1979,adminitrativo,si,"INSERT INTO Paciente VALUES('Angel Hernan','Salazar Casella','','19791025','Calle 16','ECU',NULL,'prueba@gmail.com','adminitrativo')",INSERT INTO Pais VALUES('ECU')
+juan ,León ,,,Calle 17,PER,prueba@gmail.com,27/10/1979,adminitrativo,si,"INSERT INTO Paciente VALUES('juan ','León ','','19791027','Calle 17','PER',NULL,'prueba@gmail.com','adminitrativo')",INSERT INTO Pais VALUES('PER')
+Brian,González ,,43545567678,Calle 18,ARG,prueba@gmail.com,28/10/1979,técnico,si,"INSERT INTO Paciente VALUES('Brian','González ','','19791028','Calle 18','ARG',43545567678,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('ARG')
+Emmanuel,Vazquez,,,Calle 19,MEX,prueba@gmail.com,29/10/1979,técnico,si,"INSERT INTO Paciente VALUES('Emmanuel','Vazquez','','19791029','Calle 19','MEX',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Diego ,Silva ,,423878,Calle 20,MEX,prueba@gmail.com,30/10/1979,técnico,si,"INSERT INTO Paciente VALUES('Diego ','Silva ','','19791030','Calle 20','MEX',423878,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Jose,Carlos,,34234,Calle 21,PER,prueba@gmail.com,31/10/1979,técnico,si,"INSERT INTO Paciente VALUES('Jose','Carlos','','19791031','Calle 21','PER',34234,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('PER')
+Omar,Herrera,,324234234,Calle 22,SLV,prueba@gmail.com,01/11/1979,técnico,si,"INSERT INTO Paciente VALUES('Omar','Herrera','','19791101','Calle 22','SLV',324234234,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('SLV')
+Julio,Rodríguez,,76786575,Calle 23,PER,prueba@gmail.com,02/11/1979,técnico,si,"INSERT INTO Paciente VALUES('Julio','Rodríguez','','19791102','Calle 23','PER',76786575,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('PER')
+Michael,Guevara Morales,,23213232,Calle 24,MEX,prueba@gmail.com,03/11/1979,técnico,si,"INSERT INTO Paciente VALUES('Michael','Guevara Morales','','19791103','Calle 24','MEX',23213232,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Angel,Romero,,54646546,Calle 25,NIC,prueba@gmail.com,04/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Angel','Romero','','19791104','Calle 25','NIC',54646546,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('NIC')
+Angel,González Osorio,,655,Calle 26,PER,prueba@gmail.com,05/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Angel','González Osorio','','19791105','Calle 26','PER',655,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('PER')
+Jonatán ,Ramos,,,Calle 27,NIC,prueba@gmail.com,06/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Jonatán ','Ramos','','19791106','Calle 27','NIC',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('NIC')
+Edenilson,Crespin,,,Calle 28,MEX,prueba@gmail.com,07/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Edenilson','Crespin','','19791107','Calle 28','MEX',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Estuardo Andrés,Díaz,,56456645646,Calle 29,ECU,prueba@gmail.com,08/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Estuardo Andrés','Díaz','','19791108','Calle 29','ECU',56456645646,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('ECU')
+Alexis,Torres,,56,Calle 30,PER,prueba@gmail.com,09/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Alexis','Torres','','19791109','Calle 30','PER',56,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('PER')
+Jorge,Moreno,,56546,Calle 31,MEX,prueba@gmail.com,10/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Jorge','Moreno','','19791110','Calle 31','MEX',56546,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Jesus ,Arriaga omonte,,,Calle 32,COL,prueba@gmail.com,11/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Jesus ','Arriaga omonte','','19791111','Calle 32','COL',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+Jorge,Moreno,,5465456564,Calle 33,MEX,prueba@gmail.com,12/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Jorge','Moreno','','19791112','Calle 33','MEX',5465456564,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('MEX')
+Arturo ,Meneses ,,,Calle 34,COL,prueba@gmail.com,13/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Arturo ','Meneses ','','19791113','Calle 34','COL',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+Geovanny,Sierra,,,Calle 35,COL,prueba@gmail.com,14/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Geovanny','Sierra','','19791114','Calle 35','COL',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+jose,maldonado,,,Calle 36,COL,prueba@gmail.com,15/11/1979,técnico,no,"INSERT INTO Paciente VALUES('jose','maldonado','','19791115','Calle 36','COL',NULL,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+Luis Ismael ,Díaz de León Ruiz ,,5464566,Calle 37,COL,prueba@gmail.com,16/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Luis Ismael ','Díaz de León Ruiz ','','19791116','Calle 37','COL',5464566,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+Danny,Ruiz,,546787989,Calle 38,COL,prueba@gmail.com,17/11/1979,técnico,no,"INSERT INTO Paciente VALUES('Danny','Ruiz','','19791117','Calle 38','COL',546787989,'prueba@gmail.com','técnico')",INSERT INTO Pais VALUES('COL')
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,nombrePac,,,,,,,,,,
+,priApellidoPac,,,,,,,,,,
+,domicilioPac,,,,,,,,,,
+,fechaNacimientoPac,,,,,,,,,,
+,idPaiPac,,,,,,,,,,
+,telefonoPac,,,,,,,,,,
+,emailPac,,,,,,,,,,
+,obsPac,,,,,,,,,,

@@ -1,0 +1,30 @@
+-- AÑADIR, MODIFICAR Y QUITAR COLUMNAS DE TABLA
+ALTER TABLE Paciente ADD estado smallint
+ALTER TABLE Paciente ALTER COLUMN estado bit
+ALTER TABLE Paciente DROP COLUMN estado
+
+SELECT * FROM Paciente
+
+-- AÑADIR FOREIGN KEY
+ALTER TABLE Paciente 
+ADD CONSTRAINT FK_idPaiPac FOREIGN KEY (idPaiPac) REFERENCES Pais(idPai)
+
+ALTER TABLE HistoriaPaciente 
+ADD CONSTRAINT FK_idPacHip FOREIGN KEY (idPacHip) REFERENCES Paciente(idPac)
+
+-- AÑADIR UN TIPO
+CREATE TYPE pagoEstado FROM smallint
+ALTER TABLE PagoEstado ALTER COLUMN idPae [dbo].[pagoEstado];
+ALTER TABLE Pago ALTER COLUMN idPaePag [dbo].[pagoEstado];
+
+-- ELIMINAR UNA TABLA
+CREATE TABLE ejemplo (campo0 int IDENTITY(0,1), camp1 int, camp2 int)
+DROP TABLE ejemplo
+
+-- ELIMINAR LOS REGISTROS DE UNA TABLA
+INSERT INTO ejemplo VALUES (0, 0)
+INSERT INTO ejemplo VALUES (0, 1)
+INSERT INTO ejemplo VALUES (1, 0)
+INSERT INTO ejemplo VALUES (1, 1)
+
+TRUNCATE TABLE ejemplo

@@ -1,0 +1,107 @@
+---- CREAR FUNCION
+--SELECT dbo.nombreFunc (256);
+
+--CREATE FUNCTION nombreFunc (@var int) RETURNS int 
+--AS
+
+--BEGIN 
+--	SET @var *= 5
+--	RETURN @var
+--END
+
+-- LEFT Y RIGHT
+DECLARE @var varchar(20) = 'Ramiro'
+DECLARE @var1 varchar(20) = 'Gonzales' 
+PRINT LEFT(@var, 1)
+PRINT LEFT(@var1, 1)
+PRINT LEFT(@var, 3)
+PRINT RIGHT(@var, 3)
+PRINT LEFT(@var, 3) + RIGHT(@var, 3)
+
+SELECT CONCAT(LEFT(nombrePac, 1), LEFT(priApellidoPac, 1)) Iniciales FROM Paciente
+
+-- LEN
+DECLARE @var2 varchar(20) = 'Ramiro'
+PRINT LEN(@var2)
+PRINT LEFT(@var2, LEN(@var2) - 2)
+
+SELECT LEN(domicilioPac) CaracteresDomicilio FROM Paciente
+
+-- UPPER Y LOWER
+DECLARE @var3 varchar(20) = 'RaMiRo'
+DECLARE @var4 varchar(20) = 'GOnzALes' 
+PRINT UPPER(@var3) + LOWER (@var4)
+PRINT UPPER(LEFT(@var3,1)) + LOWER(RIGHT(@var3, LEN(@var3) -1)) + ' ' + UPPER(LEFT(@var4,1)) + LOWER(RIGHT(@var4, LEN(@var4) -1))
+
+-- REPLACE
+DECLARE @var5 varchar(20) = 'Rami"ro'
+DECLARE @var6 varchar(20) = 'Go@nzales'
+
+SELECT REPLACE(@var5, '"', '')
+SELECT REPLACE(@var6, '@', '')
+SELECT REGEXP_REPLACE('+57 312-8676-257', '[^0-9]', '') Telefono_Formateado
+
+-- REPLICATE
+PRINT REPLICATE('0', 5)
+
+-- LTRIM Y RTRIM
+DECLARE @var7 varchar(20) = '        Ramiro        '
+DECLARE @var8 varchar(20) = '        Gonzales      '
+
+SELECT RTRIM(LTRIM(@var7)) + LTRIM(RTRIM(@var8)) Sin_espacios
+
+-- CONCAT
+SELECT CONCAT(RTRIM(LTRIM(@var7)),' ', LTRIM(RTRIM(@var8))) concatenados
+
+-- GETDATE Y GETUTCDATE
+SELECT GETDATE()
+SELECT GETUTCDATE()
+
+-- DATEADD
+SELECT DATEADD(DAY, 2, GETDATE())
+SELECT DATEADD(HOUR, -5, GETDATE())
+SELECT DATEADD(YEAR, 7, GETDATE())
+SELECT DATEADD(MONTH, -3, GETDATE())
+SELECT DATEADD(MINUTE, 26, GETDATE())
+
+SELECT DATEADD(DD, 2, GETDATE())
+SELECT DATEADD(HH, -5, GETDATE())
+SELECT DATEADD(YYYY, 7, GETDATE())
+SELECT DATEADD(MM, -3, GETDATE())
+SELECT DATEADD(MI, 26, GETDATE())
+
+-- DATEDIFF
+SELECT DATEDIFF(DD, GETDATE(), '20170120')
+SELECT DATEDIFF(HH, GETDATE(), '20170120')
+SELECT DATEDIFF(MM, GETDATE(), '20170120')
+SELECT DATEDIFF(MI, GETDATE(), '20170120')
+SELECT DATEDIFF(SS, GETDATE(), '20170120')
+SELECT DATEDIFF(MILLISECOND, GETDATE(), '20260720')
+
+-- DATEPART
+SELECT DATEPART(DW, GETDATE())
+
+-- ISDATE
+PRINT ISDATE('20240229')
+
+-- CAST Y CONVERT
+DECLARE @num money = 500.10
+SELECT CAST(@num AS INT) numero
+
+SELECT montoPag FROM Pago
+SELECT CAST(montoPag AS INT) monto_numero FROM Pago
+
+SELECT CONVERT(INT, @num)
+
+DECLARE @fecha datetime = GETDATE()
+PRINT CONVERT(char(11), @fecha)
+PRINT CONVERT(char(19), @fecha)
+
+-- CON FORMATO
+PRINT CONVERT(char(19), @fecha, 101)
+PRINT CONVERT(char(19), @fecha, 103)
+PRINT CONVERT(char(19), @fecha, 104)
+PRINT CONVERT(char(19), @fecha, 105)
+PRINT CONVERT(char(19), @fecha, 111)
+PRINT CONVERT(char(19), @fecha, 112)
+PRINT CONVERT(char(19), @fecha, 120)
